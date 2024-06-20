@@ -317,7 +317,7 @@ body {
 .modal-buttons {
 	display: flex;
 	gap: 10px;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 .modal-button {
