@@ -206,6 +206,7 @@ export default class App {
       this.state.clearTempData();
       this.state.clearRecorder();
       this.render.clearCreatePanel();
+      this.deActivatingSendCoordsButtons()
 
       return;
     }
@@ -214,6 +215,7 @@ export default class App {
 
     this.state.clearTempData();
     this.render.clearCreatePanel();
+    this.deActivatingSendCoordsButtons();
 
     const dataObj = {
       type,
