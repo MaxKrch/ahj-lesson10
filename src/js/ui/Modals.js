@@ -32,6 +32,7 @@ export default class Modals {
         },
         input: {
           keyup: [],
+          input: [],
         },
       },
       inform: {
@@ -46,6 +47,9 @@ export default class Modals {
     try {
       this.confirm.input.addEventListener('keyup', (event) => {
         this.eventListeners.confirm.input.keyup.forEach((item) => item(event));
+      });
+      this.confirm.input.addEventListener('input', (event) => {
+        this.eventListeners.confirm.input.input.forEach((item) => item(event));
       });
       this.confirm.buttons.ok.addEventListener('click', (event) => {
         if (!this.isActiveButtons(event)) {

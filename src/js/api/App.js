@@ -31,6 +31,7 @@ export default class App {
     this.render.modals.saveEventListener('confirm', 'ok', 'click', this.onClickConfirmModalOk.bind(this));
     this.render.modals.saveEventListener('confirm', 'cancel', 'click', this.onClickConfirmModalCancel.bind(this));
     this.render.modals.saveEventListener('confirm', 'input', 'keyup', this.onKeyupConfirmModalInput.bind(this));
+    this.render.modals.saveEventListener('confirm', 'input', 'input', this.onInputConfirmModalInput.bind(this));
 
     this.render.modals.saveEventListener('inform', 'ok', 'click', this.onClickInformModalOk.bind(this));
   }
@@ -74,8 +75,11 @@ export default class App {
     if (event.key === 'Enter' && !event.shiftKey) {
       this.clickConfirmOk();
     }
+  }
 
-    this.lagingChekCoords(this.render.modals.confirm.input.value.trim());
+  onInputConfirmModalInput() {
+    const coords = this.render.getInputCoords();
+    this.lagingChekCoords(coords);
   }
 
   onClickInformModalOk() {
