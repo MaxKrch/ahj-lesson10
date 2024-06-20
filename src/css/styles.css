@@ -316,8 +316,8 @@ body {
 
 .modal-buttons {
 	display: flex;
-	gap: 25px;
-	justify-content: center;
+	gap: 10px;
+	justify-content: space-around;
 }
 
 .modal-button {
