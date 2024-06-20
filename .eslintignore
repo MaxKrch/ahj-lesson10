@@ -1,0 +1,4 @@
+dist
+coverage
+webpack.*.js
+jest.*.js
