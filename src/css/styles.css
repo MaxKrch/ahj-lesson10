@@ -309,7 +309,7 @@ body {
 
 .modal-info {
 	color: rgb(225 5 5);
-	height: 20px;
+	min-height: 25px;
 	font-size: 0.95rem;
 	margin: -10px 0;
 }
