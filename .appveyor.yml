@@ -1,6 +1,6 @@
 image: Ubuntu2004  # образ для сборки
 
-stack: node 20.x  # окружение
+stack: node 20  # окружение
 
 branches:
   only:
