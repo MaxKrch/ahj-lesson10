@@ -1,4 +1,4 @@
-import App from '../API/App';
+import App from '../API/App.js';
 
 const correctCoords = ['[05.5015, -55.5745210]', '-00.00575, 12.1234567]', '0, -50.5741]', '54 ,-41.5470 ', '12.5,1.0 '];
 
